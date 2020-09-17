@@ -19,7 +19,7 @@ app.get('*', function (req, res){
     }
 
 
-let images = ['.jpg', 'jpeg', '.png', '.bmp', 'svg'];
+let images = ['jpg', 'jpeg', 'png', 'bmp', 'svg'];
 let ext = req.url.split('.')[1];
 
 if (images.includes(ext)){
