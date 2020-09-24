@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/register.css">    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
     <title>Mercado Liebre</title>
 </head>
 <body>
     <header>
-        <div><img src = "images/logo-mercado-liebre.svg"></div>
+        <div><a href="/"><img src = "images/logo-mercado-liebre.svg"></div></a>
         <p class="parrafo"> Buscar productos, marcas y más</p>
         <p class="parrafo">Comprá en cuotas y sin tarjeta de crédito</p>
         <nav>
@@ -47,6 +48,39 @@
             </ul>
         </nav>
     </header>
+
+        <form action="index.html" method="get">
+          
+            <p class="margin"><input placeholder="Nombre y apellido" type="text" id="nombreapellido" name="nombreapellido"></p>
+            <p class="margin"><input placeholder="Nombre de usuario" type="text" id="usuario" name="usuario"></p>
+            <p class="margin"><input placeholder="Email" type="text" id="email" name="email"></p> 
+            <p class="margin">Fecha de nacimiento</p>
+            <p class="margin"><input placeholder="Domicilio" type="date" id="domicilio" name="domicilio"></p> 
+
+            <p class="tituloRegistro"><label for="">Perfil del usuario</label></p>
+            <p class="opcionUsuario" id="comprador"><input type="radio" name="perfil" value="comprador">Comprador</p> 
+            <p class="opcionUsuario"><input type="radio" name="perfil" value="vendedor">Vendedor</p>
+
+            <p class="tituloRegistro"><label for="">Categorias de interes</label></p>
+            <p class="opcionInteres"><input type="checkbox" name="categorias" value="electro">Electro</p> 
+            <p class="opcionInteres"><input type="checkbox" name="categorias" value="moda">Moda</p>
+            <p class="opcionInteres"><input type="checkbox" name="categorias" value="hogar">Hogar</p>    
+            <p id="jugueteria"><input type="checkbox" name="categorias" value="jugueteria">Jugueteria</p>
+            
+            <p><label for="">Elegi tu foto de usuario</label></p>
+            <p><input placeholder="Elegi tu foto de usuario" type="file" id="archivo" name="archivo"></p> 
+            
+            <p class="margin"><input placeholder="Contrasena" type="text" id="password" name="password"></p> 
+            <p class="margin"><input placeholder="Confirmar contrasena" type="text" id="password" name="password"></p> 
+            
+
+
+            <p id="enviar"><input type="submit" value="Enviar"></p>
+            <p><input type="reset" value="Borrar"></p>
+
+
+        </form>
+            
 
         <div><img width = 100% src = "images/img-home-banner.jpg"></div>
 

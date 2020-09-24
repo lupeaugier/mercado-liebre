@@ -1,0 +1,31 @@
+.margin {
+    margin: 0%;
+    padding: 0%;
+}
+
+#comprador {
+    float: left;
+}
+
+.opcionUsuario {
+    margin-top: 0%;
+}
+
+.tituloRegistro {
+    font-weight: bold;
+}
+
+.opcionInteres {
+    float: left;
+    margin-bottom: 0%;
+    margin-top: 0%;
+}
+
+#jugueteria {
+    margin-bottom: 0%;
+    margin-top: 0%;
+}
+
+#enviar {
+    float: left;
+}
