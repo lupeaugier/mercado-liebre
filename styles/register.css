@@ -1,6 +1,9 @@
 .margin {
-    margin: 0%;
-    padding: 0%;
+    margin-top: 20px;
+    padding-right: 10px;
+    border-radius: 5px;
+    width: 100%;
+    display: inline-block;
 }
 
 #comprador {
@@ -28,4 +31,38 @@
 
 #enviar {
     float: left;
+    width:100%;
+}
+
+.ancho100 {
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    border-width: 0px;
+}
+
+.padding10 {
+    padding: 10px;
+}
+
+.botonEnviar {
+    color: white;
+    background-color: #0044AA;
+}
+
+#borrar {
+    width: 100%;
+}
+
+.rojo {
+    background-color: red;
+}
+
+#nombre {
+    width: 100%;
+}
+
+#nombreApellido {
+    width: 100%;
+
 }

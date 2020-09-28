@@ -11,10 +11,14 @@
 </head>
 <body>
     <header>
-        <div><img src = "images/logo-mercado-liebre.svg"></div>
-        <p class="parrafo"> Buscar productos, marcas y más</p>
-        <p class="parrafo">Comprá en cuotas y sin tarjeta de crédito</p>
+        <div class="mitadDe"><a href="/"><img src = "images/logo-mercado-liebre.svg"></a></div>
+        <div class="parrafo mitadDe"><input type="search" placeholder="Buscar productos, marcas" id="buscador"></div>
+        <div><i class="fas fa-search"></i></div>
+        <i class="fas fa-hand-holding-usd"></i><p class="parrafo">Comprá en cuotas y sin tarjeta de crédito</p>
         <nav>
+            <div class="botonMenu">
+                <i class="fas fa-bars hamburger"></i>
+            </div>
             <ul>
                 <li class="parrafo">
                     <a href="#">Ofertas</a>
@@ -50,89 +54,25 @@
     </header>
 
 
-    <form action="index.html" method="get">       
-        <p class="login"><input placeholder="Nombre de usuario" type="text" id="usuario" name="usuario"></p>
-        <p class="login" id="contrasena"><input placeholder="Contrasena" type="text" id="password" name="password"></p>
-        <p class="login"><input type="submit" value="Enviar"></p>
-    </form>
-
-        <div><img width = 100% src = "images/img-home-banner.jpg"></div>
-
-        <section class="color-productos">
-
-            <h2 class="titulares">Basado en tu ultima visita</h2>
-
-            <article class="productos">
-                <img width=100% src = "images/img-cafetera-moulinex.jpg"></div>
-                <div class="green-icon"><i class="fas fa-truck"></i></div>
-                <p class="precios">$ 6.770</p>
-                <p class="green-icon descuentos">20% off</p>
-                <p class="parrafo">Cafetera Moulinex Dolce Gusto Lorem ipsum, dolor sit amet.</p>
-            </article>
+    <main>
+        <form action="index.html" method="get">       
             
-            <article class="productos">
-                <img width=100% src = "images/img-macbook-pro-2019.jpg"></div>
-                <div class="green-icon"><i class="fas fa-truck"></i></div>
-                <p class="precios">$ 230.000</p>
-                <p class="green-icon descuentos">40% off</p>
-                <p class="parrafo">Macbook Pro 2019 Lorem ipsum, dolor sit amet.</p>
-            </article>
+            <p class="login" id="usuario">
+                <input placeholder="Nombre de usuario" type="text" id="usuario" class="ancho100" name="usuario">
+            </p>
+            
+            <p class="login" id="contrasena">
+                <input placeholder="Contrasena" type="text" id="password" class="ancho100" name="password">
+            </p>
+            
+            <p class="login" id="enviar">
+                <input type="submit" class="ancho100 botonEnviar" value="Enviar">
+            </p>
 
-            <article class="productos">
-                <img width=100% src = "images/img-samsung-galaxy-s10.jpg">
-                <div class="green-icon"><i class="fas fa-truck"></i></div>
-                <p class="precios">$ 70.500</p>
-                <p class="green-icon descuentos">15% OFF</p>   
-                <p class="parrafo">Teléfono móvil Samsung Galaxy S10 Lorem ipsum, dolor sit amet.</p>             
-            </article>
+        </form>
+    </main>    
 
-            <article class="productos">
-                <img width=100% src = "images/img-tv-samsung-smart.jpg">
-                <div class="green-icon"><i class="fas fa-truck"></i></div>
-                <p class="precios"> $ 34.000</p>     
-                <p class="green-icon descuentos">15% OFF</p>
-                <p class="parrafo">SmartTv Samsung 43" Lorem ipsum, dolor sit amet.</p>
-            </article>
-        
-        </section>
-
-        <section>
-            <h2 class="titulares">Ofertas</h2>
-
-
-            <article class="productos">
-                <img width=100% src = "images/img-cafetera-moulinex.jpg"></div>
-                <div class="green-icon"><i class="fas fa-truck"></i></div>
-                <p class="precios">$ 6.770</p>
-                <p class="green-icon descuentos">20% off</p>
-                <p class="parrafo">Cafetera Moulinex Dolce Gusto Lorem ipsum, dolor sit amet.</p>
-            </article>
-        
-            <article class="productos">
-                <img width=100% src = "images/img-macbook-pro-2019.jpg"></div>
-                <div class="green-icon"><i class="fas fa-truck"></i></div>
-                <p class="precios">$ 230.000</p>
-                <p class="green-icon descuentos">40% off</p>
-                <p class="parrafo">Macbook Pro 2019 Lorem ipsum, dolor sit amet.</p>
-            </article>
-
-            <article class="productos">
-                <img width=100% src = "images/img-samsung-galaxy-s10.jpg">
-                <div class="green-icon"><i class="fas fa-truck"></i></div>
-                <p class="precios">$ 70.500</p>
-                <p class="green-icon descuentos">15% OFF</p>   
-                <p class="parrafo">Teléfono móvil Samsung Galaxy S10 Lorem ipsum, dolor sit amet.</p>             
-            </article>
-
-            <article class="productos">
-                <img width=100% src = "images/img-tv-samsung-smart.jpg">
-                <div class="green-icon"><i class="fas fa-truck"></i></div>
-                <p class="precios"> $ 34.000</p>     
-                <p class="green-icon descuentos">15% OFF</p>
-                <p class="parrafo">SmartTv Samsung 43" Lorem ipsum, dolor sit amet.</p>
-            </article>
-        
-        </section>
+       
 
         <footer>
            <section class="productos">

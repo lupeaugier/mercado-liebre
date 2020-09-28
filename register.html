@@ -11,10 +11,14 @@
 </head>
 <body>
     <header>
-        <div><a href="/"><img src = "images/logo-mercado-liebre.svg"></div></a>
-        <p class="parrafo"> Buscar productos, marcas y más</p>
-        <p class="parrafo">Comprá en cuotas y sin tarjeta de crédito</p>
+        <div class="mitadDe"><a href="/"><img src = "images/logo-mercado-liebre.svg"></a></div>
+        <div class="parrafo"><input type="search" placeholder="Buscar productos, marcas" id="buscador"></div>
+        <div><i class="fas fa-search"></i></div>
+        <i class="fas fa-hand-holding-usd"></i><p class="parrafo">Comprá en cuotas y sin tarjeta de crédito</p>
         <nav>
+            <div class="botonMenu">
+                <i class="fas fa-bars hamburger"></i>
+            </div>
             <ul>
                 <li class="parrafo">
                     <a href="#">Ofertas</a>
@@ -49,116 +53,70 @@
         </nav>
     </header>
 
-        <form action="index.html" method="get">
+        <main>
+             <form action="index.html" method="get">
           
-            <p class="margin"><input placeholder="Nombre y apellido" type="text" id="nombreapellido" name="nombreapellido"></p>
-            <p class="margin"><input placeholder="Nombre de usuario" type="text" id="usuario" name="usuario"></p>
-            <p class="margin"><input placeholder="Email" type="text" id="email" name="email"></p> 
-            <p class="margin">Fecha de nacimiento</p>
-            <p class="margin"><input placeholder="Domicilio" type="date" id="domicilio" name="domicilio"></p> 
+                <p id="nombreApellido">
+                    <input placeholder="Nombre y apellido" type="text" class="ancho100" id="nomApe" name="nombreApellido">
+                </p>
+                
+                <p>
+                    <input placeholder="Nombre de usuario" type="text" id="usuario" class="ancho100" name="usuario">
+                </p>
+                
+                <p>
+                    <input placeholder="Email" type="text" id="email" class="ancho100" name="email">
+                </p> 
+                
+                <p>Fecha de nacimiento</p>
+                <p>
+                    <input type="date" id="nacimiento" class="ancho100" name="nacimiento">
+                </p> 
 
-            <p class="tituloRegistro"><label for="">Perfil del usuario</label></p>
-            <p class="opcionUsuario" id="comprador"><input type="radio" name="perfil" value="comprador">Comprador</p> 
-            <p class="opcionUsuario"><input type="radio" name="perfil" value="vendedor">Vendedor</p>
+                <p>
+                    <input placeholder="Domicilio" type="text" id="domicilio" class="ancho100" name="domicilio">
+                </p>
 
-            <p class="tituloRegistro"><label for="">Categorias de interes</label></p>
-            <p class="opcionInteres"><input type="checkbox" name="categorias" value="electro">Electro</p> 
-            <p class="opcionInteres"><input type="checkbox" name="categorias" value="moda">Moda</p>
-            <p class="opcionInteres"><input type="checkbox" name="categorias" value="hogar">Hogar</p>    
-            <p id="jugueteria"><input type="checkbox" name="categorias" value="jugueteria">Jugueteria</p>
+                <p class="tituloRegistro"><label for="">Perfil del usuario</label></p>
+                <p class="opcionUsuario" id="comprador"><input type="radio" name="perfil" value="comprador">Comprador</p> 
+                <p class="opcionUsuario"><input type="radio" name="perfil" value="vendedor">Vendedor</p>
+
+                <p class="tituloRegistro"><label for="">Categorias de interes</label></p>
+                <p class="opcionInteres"><input type="checkbox" name="categorias" value="electro">Electro</p> 
+                <p class="opcionInteres"><input type="checkbox" name="categorias" value="moda">Moda</p>
+                <p class="opcionInteres"><input type="checkbox" name="categorias" value="hogar">Hogar</p>    
+                <p id="jugueteria"><input type="checkbox" name="categorias" value="jugueteria">Jugueteria</p>
+                
+                <p>
+                    <label for="">Elegi tu foto de usuario</label>
+                </p>
+                
+                <p>
+                    <input placeholder="Elegi tu foto de usuario" type="file" id="archivo" name="archivo">
+                </p> 
+                
+                <p>
+                    <input placeholder="Contrasena" type="text" class="ancho100" id="password" name="password">
+                </p> 
+                
+                <p>
+                    <input placeholder="Confirmar contrasena" type="text" class="ancho100" id="password" name="password">
+                </p> 
+                
+                <p id="enviar">
+                    <input type="submit" class="botonEnviar ancho100" value="Enviar">
+                </p>
+                
+                <p id="borrar">
+                    <input type="reset" class="botonEnviar ancho100 rojo" value="Borrar">
+                </p>
+
+
+            </form>
+          </main>
             
-            <p><label for="">Elegi tu foto de usuario</label></p>
-            <p><input placeholder="Elegi tu foto de usuario" type="file" id="archivo" name="archivo"></p> 
-            
-            <p class="margin"><input placeholder="Contrasena" type="text" id="password" name="password"></p> 
-            <p class="margin"><input placeholder="Confirmar contrasena" type="text" id="password" name="password"></p> 
-            
 
-
-            <p id="enviar"><input type="submit" value="Enviar"></p>
-            <p><input type="reset" value="Borrar"></p>
-
-
-        </form>
-            
-
-        <div><img width = 100% src = "images/img-home-banner.jpg"></div>
-
-        <section class="color-productos">
-
-            <h2 class="titulares">Basado en tu ultima visita</h2>
-
-            <article class="productos">
-                <img width=100% src = "images/img-cafetera-moulinex.jpg"></div>
-                <div class="green-icon"><i class="fas fa-truck"></i></div>
-                <p class="precios">$ 6.770</p>
-                <p class="green-icon descuentos">20% off</p>
-                <p class="parrafo">Cafetera Moulinex Dolce Gusto Lorem ipsum, dolor sit amet.</p>
-            </article>
-            
-            <article class="productos">
-                <img width=100% src = "images/img-macbook-pro-2019.jpg"></div>
-                <div class="green-icon"><i class="fas fa-truck"></i></div>
-                <p class="precios">$ 230.000</p>
-                <p class="green-icon descuentos">40% off</p>
-                <p class="parrafo">Macbook Pro 2019 Lorem ipsum, dolor sit amet.</p>
-            </article>
-
-            <article class="productos">
-                <img width=100% src = "images/img-samsung-galaxy-s10.jpg">
-                <div class="green-icon"><i class="fas fa-truck"></i></div>
-                <p class="precios">$ 70.500</p>
-                <p class="green-icon descuentos">15% OFF</p>   
-                <p class="parrafo">Teléfono móvil Samsung Galaxy S10 Lorem ipsum, dolor sit amet.</p>             
-            </article>
-
-            <article class="productos">
-                <img width=100% src = "images/img-tv-samsung-smart.jpg">
-                <div class="green-icon"><i class="fas fa-truck"></i></div>
-                <p class="precios"> $ 34.000</p>     
-                <p class="green-icon descuentos">15% OFF</p>
-                <p class="parrafo">SmartTv Samsung 43" Lorem ipsum, dolor sit amet.</p>
-            </article>
-        
-        </section>
-
-        <section>
-            <h2 class="titulares">Ofertas</h2>
-
-
-            <article class="productos">
-                <img width=100% src = "images/img-cafetera-moulinex.jpg"></div>
-                <div class="green-icon"><i class="fas fa-truck"></i></div>
-                <p class="precios">$ 6.770</p>
-                <p class="green-icon descuentos">20% off</p>
-                <p class="parrafo">Cafetera Moulinex Dolce Gusto Lorem ipsum, dolor sit amet.</p>
-            </article>
-        
-            <article class="productos">
-                <img width=100% src = "images/img-macbook-pro-2019.jpg"></div>
-                <div class="green-icon"><i class="fas fa-truck"></i></div>
-                <p class="precios">$ 230.000</p>
-                <p class="green-icon descuentos">40% off</p>
-                <p class="parrafo">Macbook Pro 2019 Lorem ipsum, dolor sit amet.</p>
-            </article>
-
-            <article class="productos">
-                <img width=100% src = "images/img-samsung-galaxy-s10.jpg">
-                <div class="green-icon"><i class="fas fa-truck"></i></div>
-                <p class="precios">$ 70.500</p>
-                <p class="green-icon descuentos">15% OFF</p>   
-                <p class="parrafo">Teléfono móvil Samsung Galaxy S10 Lorem ipsum, dolor sit amet.</p>             
-            </article>
-
-            <article class="productos">
-                <img width=100% src = "images/img-tv-samsung-smart.jpg">
-                <div class="green-icon"><i class="fas fa-truck"></i></div>
-                <p class="precios"> $ 34.000</p>     
-                <p class="green-icon descuentos">15% OFF</p>
-                <p class="parrafo">SmartTv Samsung 43" Lorem ipsum, dolor sit amet.</p>
-            </article>
-        
-        </section>
+       
 
         <footer>
            <section class="productos">

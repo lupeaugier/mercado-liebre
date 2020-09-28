@@ -7,6 +7,7 @@
   --gray-light: #ebebeb;
   --green: #39b54a;
 
+
 }
 
 body {
@@ -14,19 +15,80 @@ body {
     background-color: var(--gray-light);
 }
 
+.mitadDe {
+    width: 50%;
+}
+
 .blue-icon {
     color: var(--light-blue);
 }
 
+.banner {
+    display: block;
+}
+
 .green-icon {
     color: var(--green);
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid #39b54a;
+    padding: 5px;
+    display: inline-block;
 }
+
+.margin0 {
+    margin: 0%;
+} 
 
 .productos {
     background-color: white;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 header {
     background-color: var(--yellow)
+}
+
+.banner {
+    display: block;
+}
+
+.hamburger {
+    font-size: 20px;
+    width: 40px;
+    height: 20px;
+    background-color: #0044aa;
+    color: white;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.botonMenu {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.menu {
+    display: none;
+}
+
+.botonMenu:hover .menu {
+    display: block;
+}
+
+.fa-search {
+    background-color: white;
+    border: 0.5px solid;
+}
+
+.fa-hand-holding-usd {
+    float: left;
 }
 
 .parrafo {
@@ -36,23 +98,36 @@ header {
 
 .titulares {
     font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 90%;
+    text-align: center;
 }
 
-.precios{
+.precios {
     font-size: 18px;
-    
+    font-weight: bold;
+
 }
 
 .descuentos{
     font-size: 16px;
+    color: var(--green);
 }
 
 .descripciones {
     font-size: 16px;
+    font-weight: bold;
 }
 
-.fas {
-    color: black;
+
+.condiciones {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.piePagina {
+    padding: 20px 5%;
 }
 
 

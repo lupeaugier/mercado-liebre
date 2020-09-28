@@ -1,9 +1,25 @@
 .login{
     padding: 0%;
     margin: 0%;
+    width: 100%;
 }
 
 #contrasena {
     float: left;
     margin-bottom: 10px;;
+}
+
+.ancho100 {
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    border-width: 0px;
+    margin-bottom: 20px;
+}
+
+.botonEnviar {
+    color: white;
+    background-color: #0044AA;
+
+
 }
