@@ -18,8 +18,40 @@ body {
     width: 50%;
 }
 
+.buscador1 {
+    width: 146px;
+    height: 40px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    padding-left: 8px;
+    padding-right: 4px;
+    margin-left: 6px;
+}
+
+#buscador {
+    border: none;
+}
+
+.contenedor-header {
+    justify-content: center;
+}
+
+.contenedor-logo {
+    width: 102%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logo {
+    width: 155px;
+}
+
 .blue-icon {
     color: var(--light-blue);
+    font-size: 30px;
+    margin-bottom: 10px;
 }
 
 .banner {
@@ -32,7 +64,6 @@ body {
     border-radius: 50%;
     border: 1px solid #39b54a;
     padding: 5px;
-
     text-align: right;
 }
 
@@ -40,6 +71,10 @@ body {
     margin: 0%;
 } 
 
+.negrita {
+
+    margin-bottom: 10px;
+}
 .productos {
     background-color: white;
     margin-top: 20px;
@@ -72,8 +107,9 @@ header {
 
 .botonMenu {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 8px;
     height: 60px;
+    margin-bottom: -25px;
 }
 
 .menu {
@@ -85,8 +121,10 @@ header {
 }
 
 .fa-search {
-    background-color: var(--yellow);
+    background-color: white;
     border: 0.5px none;
+    align-self: center;
+    color: grey;
 }
 
 .parrafo {
@@ -132,11 +170,13 @@ header {
 
 .piePagina {
     padding: 20px 5%;
+    text-align: center;
 }
 
 .contenedor {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    padding: 27px 0px;
 
 }
 
@@ -148,7 +188,8 @@ header {
     display: flex;
     align-items: center;
     height: 50%;
-    margin: 0;
+    margin: 20px;
+    justify-content: center;
 }
 
 .margin0 {
@@ -156,12 +197,19 @@ header {
     margin: 0% 10px;
 }
 
+.descripcion {
+    display: none;
+}
 .cajaProductos {
     display: flex;
     border-top: 1px solid #ebebeb;
     flex-direction: column;
     position: relative;
     margin-top: -11px;
+}
+
+.imagen-hover:hover + .descripcion {
+    display: block;
 }
 
 .precio-desc {
