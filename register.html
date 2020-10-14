@@ -56,60 +56,66 @@
         <main>
              <form action="index.html" method="get">
           
-                <p id="nombreApellido">
-                    <input placeholder="Nombre y apellido" type="text" class="ancho100" id="nomApe" name="nombreApellido">
-                </p>
+                <div id="nombreApellido">
+                    <input placeholder="Nombre y apellido" type="text" class="ancho100 w-90" id="nomApe" name="nombreApellido">
+                </div>
                 
-                <p>
-                    <input placeholder="Nombre de usuario" type="text" id="usuario" class="ancho100" name="usuario">
-                </p>
+                <div>
+                    <input placeholder="Nombre de usuario" type="text" id="usuario" class="ancho100 w-90" name="usuario">
+                </div>
                 
-                <p>
-                    <input placeholder="Email" type="text" id="email" class="ancho100" name="email">
-                </p> 
+                <div>
+                    <input placeholder="Email" type="text" id="email" class="ancho100 w-90" name="email">
+                </div>
                 
                 <p>Fecha de nacimiento</p>
-                <p>
-                    <input type="date" id="nacimiento" class="ancho100" name="nacimiento">
-                </p> 
+                <div>
+                    <input type="date" id="nacimiento" class="ancho100 w-90" name="nacimiento">
+                </div> 
 
-                <p>
-                    <input placeholder="Domicilio" type="text" id="domicilio" class="ancho100" name="domicilio">
-                </p>
-
-                <p class="tituloRegistro"><label for="">Perfil del usuario</label></p>
-                <p class="opcionUsuario" id="comprador"><input type="radio" name="perfil" value="comprador">Comprador</p> 
-                <p class="opcionUsuario"><input type="radio" name="perfil" value="vendedor">Vendedor</p>
-
-                <p class="tituloRegistro"><label for="">Categorias de interes</label></p>
-                <p class="opcionInteres"><input type="checkbox" name="categorias" value="electro">Electro</p> 
-                <p class="opcionInteres"><input type="checkbox" name="categorias" value="moda">Moda</p>
-                <p class="opcionInteres"><input type="checkbox" name="categorias" value="hogar">Hogar</p>    
-                <p id="jugueteria"><input type="checkbox" name="categorias" value="jugueteria">Jugueteria</p>
+                <div>
+                    <input placeholder="Domicilio" type="text" id="domicilio" class="ancho100 w-90" name="domicilio">
+                </div>
                 
+                <div class="datos-usuario">
+                    <p class="tituloRegistro"><label for="">Perfil del usuario</label></p>
+                    <div class="opciones-tipo-usuario">
+                        <div class="opcionUsuario" id="comprador"><input type="radio" name="perfil" value="comprador">Comprador</div> 
+                        <div class="opcionUsuario"><input type="radio" name="perfil" value="vendedor">Vendedor</div>
+                    </div>
+                </div>   
+                
+                <div class="intereses">
+                    <p class="tituloRegistro"><label for="">Categorias de interes</label></p>
+                    <div class="opcionInteres"><input type="checkbox" name="categorias" value="electro">Electro</div> 
+                    <div class="opcionInteres"><input type="checkbox" name="categorias" value="moda">Moda</div>
+                    <div class="opcionInteres"><input type="checkbox" name="categorias" value="hogar">Hogar</div>    
+                    <div id="jugueteria"><input type="checkbox" name="categorias" value="jugueteria">Jugueteria</div>
+                </div>
+
                 <p>
                     <label for="">Elegi tu foto de usuario</label>
                 </p>
                 
-                <p>
-                    <input placeholder="Elegi tu foto de usuario" type="file" id="archivo" name="archivo">
-                </p> 
+                <div>
+                    <input placeholder="Elegi tu foto de usuario" type="file" class="ancho100 w-90" id="archivo" name="archivo">
+                </div> 
                 
-                <p>
-                    <input placeholder="Contrasena" type="text" class="ancho100" id="password" name="password">
-                </p> 
+                <div>
+                    <input placeholder="Contrasena" type="text" class="ancho100 w-90" id="password" name="password">
+                </div> 
                 
-                <p>
-                    <input placeholder="Confirmar contrasena" type="text" class="ancho100" id="password" name="password">
-                </p> 
+                <div>
+                    <input placeholder="Confirmar contrasena" type="text" class="ancho100 w-90" id="password" name="password">
+                </div>
                 
-                <p id="enviar">
-                    <input type="submit" class="botonEnviar ancho100" value="Enviar">
-                </p>
+                <div id="enviar">
+                    <input type="submit" class="botonEnviar ancho100 w-100" value="Enviar">
+                </div>
                 
-                <p id="borrar">
-                    <input type="reset" class="botonEnviar ancho100 rojo" value="Borrar">
-                </p>
+                <div id="borrar">
+                    <input type="reset" class="botonEnviar ancho100 rojo w-100" value="Borrar">
+                </div>
 
 
             </form>

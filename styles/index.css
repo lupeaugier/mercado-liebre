@@ -6,9 +6,8 @@
   --gray-dark: #666;
   --gray-light: #ebebeb;
   --green: #39b54a;
-
-
 }
+
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -33,7 +32,8 @@ body {
     border-radius: 50%;
     border: 1px solid #39b54a;
     padding: 5px;
-    display: inline-block;
+
+    text-align: right;
 }
 
 .margin0 {
@@ -46,9 +46,13 @@ body {
     padding-bottom: 20px;
     padding-left: 15px;
     padding-right: 15px;
+    display: flex;
+    flex-direction: column;
+
 }
 header {
-    background-color: var(--yellow)
+    background-color: var(--yellow);
+    margin-bottom: 0;
 }
 
 .banner {
@@ -64,35 +68,31 @@ header {
     border-radius: 5px;
     padding-top: 10px;
     padding-bottom: 10px;
-
 }
 
 .botonMenu {
     text-align: center;
     margin-top: 20px;
-    margin-bottom: 20px;
-
+    height: 60px;
 }
 
 .menu {
     display: none;
 }
 
-.botonMenu:hover .menu {
+.botonMenu:hover + .menu {
     display: block;
 }
 
 .fa-search {
-    background-color: white;
-    border: 0.5px solid;
-}
-
-.fa-hand-holding-usd {
-    float: left;
+    background-color: var(--yellow);
+    border: 0.5px none;
 }
 
 .parrafo {
     font-size: 12px;
+    display: flex;
+    height: 50%;
 
 }
 
@@ -102,17 +102,21 @@ header {
     margin-bottom: 20px;
     width: 90%;
     text-align: center;
+    display: flex;
 }
 
 .precios {
     font-size: 18px;
     font-weight: bold;
 
+
 }
 
 .descuentos{
     font-size: 16px;
     color: var(--green);
+    align-self: flex-end;
+
 }
 
 .descripciones {
@@ -130,4 +134,70 @@ header {
     padding: 20px 5%;
 }
 
+.contenedor {
+    display: flex;
+    flex-direction: row;
 
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.cuotas {
+    display: flex;
+    align-items: center;
+    height: 50%;
+    margin: 0;
+}
+
+.margin0 {
+
+    margin: 0% 10px;
+}
+
+.cajaProductos {
+    display: flex;
+    border-top: 1px solid #ebebeb;
+    flex-direction: column;
+    position: relative;
+    margin-top: -11px;
+}
+
+.precio-desc {
+    flex-direction: row;
+    display: flex;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.camion {
+ text-align: right;
+}
+
+/* Mobile */
+
+@media (min-width: 361px) {
+
+
+
+}
+
+
+/* Desktop */
+
+@media (min-width: 769px) {
+
+
+
+
+}
+/* justify-content: flex-end flex-start center space-around space-between
+align-items: flex-end flex-start center baseline stretch
+flex-direction: row row-reverse column column-reserve
+order: 1, 2, -1, 1 (items individuale)
+align-self: flex-end flex-start center baseline stretch
+flex-wrap: wrap nowrap wrap-reverse
+flex-flow: direction and wrap
+align-content: flex-end flex-start center baseline stretch  */

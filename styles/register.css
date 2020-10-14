@@ -16,16 +16,17 @@
 
 .tituloRegistro {
     font-weight: bold;
+    font-family: arial;
 }
 
 .opcionInteres {
     float: left;
-    margin-bottom: 0%;
+    margin-bottom: 20px;
     margin-top: 0%;
 }
 
 #jugueteria {
-    margin-bottom: 0%;
+    margin-bottom: 20px;
     margin-top: 0%;
 }
 
@@ -34,11 +35,24 @@
     width:100%;
 }
 
-.ancho100 {
+#borrar {
     width: 100%;
+}
+
+.ancho100 {
+   
     border-radius: 5px;
     padding: 10px;
     border-width: 0px;
+    margin-bottom: 20px;
+
+}
+.w-90 {
+    width: 94%;
+}
+
+.w-100 {
+    width: 95%;
 }
 
 .padding10 {
@@ -48,11 +62,10 @@
 .botonEnviar {
     color: white;
     background-color: #0044AA;
-}
-
-#borrar {
     width: 100%;
 }
+
+
 
 .rojo {
     background-color: red;
@@ -65,4 +78,20 @@
 #nombreApellido {
     width: 100%;
 
+}
+
+.intereses {
+    display: flex;
+    flex-direction: column;
+}
+
+.datos-usuario {
+    display: flex;
+    flex-direction: column;
+}
+
+.opciones-tipo-usuario {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
 }

@@ -10,20 +10,27 @@
 </head>
 <body>
     <header>
-        <div class="mitadDe"><img src = "images/logo-mercado-liebre.svg"></div>
+        <div class="contenedor w-100">
+            <div class="mitadDe"><img src = "images/logo-mercado-liebre.svg"></div>
         
-        <div class="parrafo"><input type="search" placeholder="Buscar productos, marcas" class="mitadDe" id="buscador"></div>
+            <div class="parrafo mitadDe"><input type="search" placeholder="Buscar productos, marcas" class="w-100" id="buscador"></div>
         
-        <div><i class="fas fa-search"></i></div>
+            <div class="fa-search2"><i class="fas fa-search"></i></div>
         
-        <i class="fas fa-hand-holding-usd"></i><p class="parrafo">Comprá en cuotas y sin tarjeta de crédito</p>
+        </div>
        
+        <div class="cuotas">
+            <i class="fas fa-hand-holding-usd"></i><p class="parrafo margin0">Comprá en cuotas y sin tarjeta de crédito</p>
+        </div>
+
+
         <nav id="navegacion">
             <div class="botonMenu">
                 <i class="fas fa-bars hamburger"></i>
             </div>
             
-            <ul class="menu">
+            <div class="menu">
+                <ul class="menu-general">
                 <li class="parrafo">
                     <a href="#">Ofertas</a>
                 </li>
@@ -41,7 +48,7 @@
                 </li>
             </ul>
                 
-            <ul>
+            <ul class="menu-registro">
                 <li class="parrafo">
                     <a href="/register">Crea tu cuenta <i class="fas fa-id-card"></i></a>
                 </li>
@@ -54,6 +61,7 @@
                     <a href="#">Mis compras <i class="fas fa-shopping-bag"></i></a>
                 </li>
             </ul>
+        </div>
         </nav>
     </header>
 
@@ -65,10 +73,17 @@
 
             <article class="productos">
                 <img width=100% src = "images/img-cafetera-moulinex.jpg"></div>
-                <div class="green-icon margin0"><i class="fas fa-truck"></i></div>
-                <p class="precios margin0">$ 6.770</p>
-                <p class="descuentos margin0">20% off</p>
-                <p class="parrafo margin0">Cafetera Moulinex Dolce Gusto</p>
+                <div class="margin0 camion"><i class="fas fa-truck green-icon"></i></div>
+                <div class="cajaProductos">
+                    <div class="precio-desc">
+                    <p class="precios margin0 ">$ 6.770</p>
+                    <p class="descuentos margin0">20% off</p>
+                    </div>
+
+                    <div class="descripcion">
+                    <p class="parrafo margin0">Cafetera Moulinex Dolce Gusto</p>
+                    </div>
+                </div>
             </article>
             
             <article class="productos">
@@ -100,13 +115,14 @@
         <section>
             <h2 class="titulares">Ofertas</h2>
 
-
             <article class="productos">
-                <img width=100% src = "images/img-cafetera-moulinex.jpg"></div>
-                <div class="green-icon margin0"><i class="fas fa-truck"></i></div>
-                <p class="precios margin0">$ 6.770</p>
-                <p class="descuentos margin0">20% off</p>
-                <p class="parrafo margin0">Cafetera Moulinex Dolce Gusto</p>
+                <div><img width=100% src = "images/img-cafetera-moulinex.jpg"></div>
+                <div class="cajaProductos">
+                    <div class="green-icon margin0"><i class="fas fa-truck"></i></div>
+                    <p class="precios margin0">$ 6.770</p>
+                    <p class="descuentos margin0">20% off</p>
+                    <p class="parrafo margin0">Cafetera Moulinex Dolce Gusto</p>
+                </div>
             </article>
         
             <article class="productos">
